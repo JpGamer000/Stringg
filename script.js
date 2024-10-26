@@ -94,3 +94,18 @@ function buscarNumeroNaMatriz(matriz, numero) {
 
 }
 
+function imprimirDiagonalPrincipal(matriz) {
+        if (matriz.length !== matriz[0].length) {
+                console.log("A matriz não é quadrada.");
+                        return;
+                            }
+
+                                const diagonalPrincipal = [];
+                                    for (let i = 0; i < matriz.length; i++) {
+                                            diagonalPrincipal.push(matriz[i][i]);
+                                                }
+
+                                                    console.log("Diagonal principal:", diagonalPrincipal);
+                                                    }
+
+imprimirDiagonalPrincipal(matriz);
