@@ -81,9 +81,16 @@ function somarElementosMatriz(matriz) {
     return soma;
 }
 
-const matriz = [
+function buscarNumeroNaMatriz(matriz, numero) {
+        for (let i = 0; i < matriz.length; i++) {
+                for (let j = 0; j < matriz[i].length; j++) {
+                            if (matriz[i][j] === numero) {
+                                            return { encontrado: true, posicao: [i, j] };
+                                                        }
+                                                                }
+                                                                    }
+                                                                     return { encontrado: false };
+                                                                                                                                        
 
-];
-console.log(somarElementosMatriz(matriz)); // Saída: 45
-
+}
 
